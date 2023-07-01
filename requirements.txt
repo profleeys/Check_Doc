@@ -1,5 +1,5 @@
 tensorflow==2.9.1
-streamlit==1.22.0
+streamlit==1.24.0
 transformers==4.21.2
 torch==1.12.1 
 matplotlib==3.5.1

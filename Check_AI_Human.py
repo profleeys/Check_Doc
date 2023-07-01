@@ -18,6 +18,12 @@ if __name__ == '__main__':
     #context = st.text_input('請輸入資料', value = text)
     context = st.text_area('請輸入資料', value = text, height=160)
     
+    file = st.file_uploader('請選擇要上傳的文件:', type=['txt'])
+    
+    if file is not None:
+        context = file.read().decode('utf-8')
+        st.warning(context)
+    
     if st.button('送出'):
         inputs = st.session_state.tokenizer(context, return_tensors="pt")
 
