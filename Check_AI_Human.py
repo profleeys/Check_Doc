@@ -4,8 +4,8 @@ import torch
 import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
-    tokenizer = AutoTokenizer.from_pretrained("Hello-SimpleAI/chatgpt-detector-roberta-chinese")
     model = AutoModelForSequenceClassification.from_pretrained("Hello-SimpleAI/chatgpt-detector-roberta-chinese")
+    tokenizer = AutoTokenizer.from_pretrained("Hello-SimpleAI/chatgpt-detector-roberta-chinese")
 
     st.title('AI文件鑑識系統')
     
